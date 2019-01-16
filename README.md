@@ -68,6 +68,7 @@ provisioner         :
     generate_inv        : true
     use_instance_name   : false  # use short (platform) instead of instance name by default
     idempotency_test    : false
+    python_interpreter  : /usr/local/bin/python # path of the python on instance
 ```
 ## Idempotency test
 If you want to check your code is idempotent you can use the idempotency_test. Essentially, this will run Ansible twice and check nothing changed in the second run. If something changed it will list the tasks. Note: If your using Ansible callback in your config this might conflict.

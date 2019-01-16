@@ -55,6 +55,7 @@ module Kitchen
       default_config :ssh_extra_args, nil
       default_config :ssh_common_args, nil
       default_config :module_path, nil
+      default_config :python_interpreter, nil
 
       # For tests disable if not needed
       default_config :chef_bootstrap_url, 'https://omnitruck.chef.io/install.sh'
